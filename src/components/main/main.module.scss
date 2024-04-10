@@ -1,0 +1,11 @@
+.mainPage {
+  height: 100dvh;
+  display: grid;
+  background-image: url("/a.jpg");
+  background-size: cover;
+  .content {
+    display: grid;
+    place-content: center;
+    text-align: center;
+  }
+}

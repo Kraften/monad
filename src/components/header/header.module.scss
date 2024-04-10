@@ -1,0 +1,36 @@
+.header {
+  display: grid;
+  grid-template-columns: 200px 1fr 1fr;
+  padding: 20px;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  border-bottom: 1px solid black;
+
+  .logo {
+    display: flex;
+    width: 100%;
+  }
+
+  .navigation {
+    margin-right: 100px;
+    grid-column: 3;
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+    align-items: center;
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      gap: 20px;
+
+      li {
+        font-size: 20px;
+        cursor: pointer;
+      }
+    }
+  }
+}
