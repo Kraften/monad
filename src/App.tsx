@@ -6,7 +6,7 @@ const App = () => {
   return (
     <>
       <MainPage></MainPage>
-      <CalendarComponent></CalendarComponent>
+      {/* <CalendarComponent></CalendarComponent> */}
     </>
   );
 };

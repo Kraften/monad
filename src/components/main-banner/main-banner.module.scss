@@ -2,19 +2,30 @@
   position: relative;
   isolation: isolate;
   padding: 20px;
-  p {
-    font-size: 30px;
-  }
-  span {
+  background-image: url("/a.jpg");
+  background-size: cover;
+  .content {
+    background-color: white;
     color: black;
+    p {
+      font-size: 30px;
+    }
+    span {
+      color: black;
+    }
   }
+}
+.text {
+  position: relative;
+  left: 0;
+  top: 0;
 }
 .banner::after {
   content: "";
   position: absolute;
-  background-color: gold;
-  border-radius: 7px;
+  background-color: black;
+  // border-radius: 7px;
   inset: 0;
   z-index: -1;
-  opacity: 0.6;
+  opacity: 0.3;
 }

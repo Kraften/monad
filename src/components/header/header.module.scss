@@ -1,11 +1,9 @@
 .header {
   display: grid;
-  grid-template-columns: 200px 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   padding: 20px;
   position: fixed;
   z-index: 999;
-  width: 100%;
-  border-bottom: 1px solid black;
 
   .logo {
     display: flex;
@@ -13,11 +11,28 @@
   }
 
   .navigation {
-    margin-right: 100px;
     grid-column: 3;
     display: flex;
-    gap: 20px;
+    align-items: center;
     justify-content: end;
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      gap: 20px;
+
+      li {
+        font-size: 20px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .navigation1 {
+    grid-column: 1;
+    display: flex;
     align-items: center;
 
     ul {

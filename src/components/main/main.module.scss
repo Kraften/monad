@@ -1,11 +1,28 @@
 .mainPage {
+  font-family: "mont";
   height: 100dvh;
   display: grid;
-  background-image: url("/a.jpg");
-  background-size: cover;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  background-color: rgb(174, 224, 188);
+
+  .header {
+    position: fixed;
+    display: grid;
+    grid-row: 1;
+  }
+
+  .background {
+    display: grid;
+    grid-row: 1 / 4;
+    grid-column: 1 / 2;
+  }
   .content {
     display: grid;
-    place-content: center;
-    text-align: center;
+    align-items: center;
+    justify-items: center;
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    justify-items: end;
   }
 }
